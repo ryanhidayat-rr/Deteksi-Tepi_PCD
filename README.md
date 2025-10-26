@@ -1,4 +1,4 @@
-Pengolahan Citra Digital: Deteksi Tepi dan Segmentasi Warna.
+### Pengolahan Citra Digital: Deteksi Tepi dan Segmentasi Warna.
 
 1.  Bagian A, Deteksi Tepi, berfokus pada identifikasi batas-batas objek dalam gambar. Ini dilakukan dengan mengubah gambar menjadi skala keabuan (grayscale) dan kemudian menerapkan tiga algoritma: Sobel, Prewitt, dan Canny.
 2.  Bagian B, Segmentasi Warna, bertujuan untuk mempartisi atau mengelompokkan piksel dalam gambar berdasarkan kesamaan warnanya. Ini ditunjukkan menggunakan dua metode: K-Means Clustering dan Thresholding HSV.
