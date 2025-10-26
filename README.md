@@ -1,13 +1,12 @@
-### Pengolahan Citra Digital: Deteksi Tepi dan Segmentasi Warna.
+### PENJELASAN SINGKAT MATERI DETEKSI TEPI DAN SEGMENTASI WARNA
 
-1.  Bagian A, Deteksi Tepi, berfokus pada identifikasi batas-batas objek dalam gambar. Ini dilakukan dengan mengubah gambar menjadi skala keabuan (grayscale) dan kemudian menerapkan tiga algoritma: Sobel, Prewitt, dan Canny.
-2.  Bagian B, Segmentasi Warna, bertujuan untuk mempartisi atau mengelompokkan piksel dalam gambar berdasarkan kesamaan warnanya. Ini ditunjukkan menggunakan dua metode: K-Means Clustering dan Thresholding HSV.
+### Deteksi Tepi (Edge Detection)
+Deteksi Tepi adalah sebuah proses dalam pengolahan citra untuk mengidentifikasi dan menemukan lokasi di mana terdapat batas-batas atau kontur objek dalam sebuah gambar. Cara kerjanya adalah dengan mendeteksi area di mana terjadi perubahan intensitas (kecerahan) piksel yang drastis atau tiba-tiba. Tujuannya adalah untuk menyederhanakan gambar, hanya menyisakan garis-garis penting yang mewakili bentuk objek. Metode yang umum digunakan adalah Sobel, Prewitt, dan Canny.
 
-Program ini juga memiliki sebuah fungsi pembantu bernama `tampilkan_hasil` yang memakai Matplotlib untuk menampilkan beberapa gambar hasil olahan dalam satu jendela plot agar lebih rapi.
-
+### Segmentasi Warna (Color Segmentation)
+Segmentasi Warna adalah proses untuk mempartisi atau membagi sebuah gambar digital menjadi beberapa wilayah (segmen) yang berbeda berdasarkan kesamaan karakteristik warnanya. Cara kerjanya adalah dengan mengelompokkan piksel-piksel yang memiliki warna serupa ke dalam satu grup atau segmen yang sama. Tujuannya bisa untuk menyederhanakan gambar (mengurangi palet warna) atau untuk mengisolasi objek tertentu yang memiliki warna spesifik. Metode yang umum digunakan adalah K-Means Clustering dan Thresholding (seringkali di ruang warna HSV).### Pengolahan Citra Digital: Deteksi Tepi dan Segmentasi Warna.
 
 ### 1. Persiapan Awal (di dalam fungsi `main`)
-
 * Impor Library: Skrip ini mengimpor beberapa pustaka: `cv2` (OpenCV) untuk fungsi pemrosesan gambar, `numpy` untuk operasi array, `matplotlib.pyplot` untuk visualisasi data (plotting gambar), dan `KMeans` dari `scikit-learn` untuk clustering.
 * Membaca Gambar: `cv2.imread` digunakan untuk memuat sebuah file gambar. Penting dicatat bahwa OpenCV memuat gambar dalam format BGR (Blue-Green-Red).
 * Konversi Ruang Warna: Ini adalah langkah krusial.
